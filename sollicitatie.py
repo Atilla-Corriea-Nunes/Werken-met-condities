@@ -1,17 +1,20 @@
 failbool = False
+expbool = "False"
+extbool = "False"
+
 print("Solicitatie Circusdirecteur voor Circus HotelDeBotel")
 print("u zal wat vragen krijgen om te constanteren of u deze positie kan nemen")
 print(" ")
 q1 = input("hoeveel jaren heeft u praktijk ervaring met dieren-dressuur? ")
-r4 = input("heeft u ooit een donatie gedaan aan een goed doel? ")
+r4 = input("heeft u ooit een donatie gedaan aan een goed doel? (Ja/Nee) ")
 q12 = input("hoeveel jaar heeft u ervaring met jongleren? ")
-r1 = input("heeft u een iq level die hoger is dan 2? ")
+r1 = input("heeft u een iq level die hoger is dan 2? (Ja/Nee) ")
 q13 = input("hoeveel jaar heeft u praktijkervaring met acrobatiek? ")
 q2 = input("bent u in bezit van een MBO-4 ondernemen diploma? (Ja/Nee) ")
 r2 = input("Vind u kwark meer lekker dan vla? (Ja/Nee) ")
 q3 = input("bent u in bezit van een geldig vrachtwagen rijbewijs? (Ja/Nee) ")
 q4 = input("bent u in bezit van een hoge hoed? (Ja/Nee) ")
-r3 = input("hoe lang kan uw adem houden onderwater? ")
+r3 = input("hoe lang kan uw adem houden onderwater? (in seconden) ")
 q5 = input("bent u een man of een vrouw? (M/V) ")
 if (q5.lower() == "m"):
     q52 = 21
@@ -34,7 +37,13 @@ q6 = input("wat is uw lengte in centimeters? ")
 q7 = input("hoeveel weegt u in kilos? ")
 q8 = input('heeft u het certificaat “Overleven met gevaarlijk personeel”? (Ja/Nee) ')
 
-if (int(q1) < 4 or int(q12) < 5  or int(q13) < 3, q2.lower() == "ja", q3.lower() == "ja", q4.lower() == "ja", int(q51) < 10, int(q52) < 20, int(q6) < 149, int(q7) < 89 , q8.lower() == "ja", failbool == False):
+if (int(q1) > 4 or int(q12) > 5  or int(q13) > 3):
+    expbool = "True"
+
+if (int(q51) > 10 or int(q52) > 20):
+    extbool = "True"
+
+if (expbool == "True" and q2.lower() == "ja" and q3.lower() == "ja" and q4.lower() == "ja" and extbool == "True" and int(q6) > 149 and int(q7) > 89 and q8.lower() == "ja" and failbool == False):
     print(" ")
     print("Goed nieuws: u bent aangenomen!")
 
