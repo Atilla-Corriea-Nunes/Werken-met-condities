@@ -26,7 +26,7 @@ if (q5.lower() == "m"):
 
 elif (q5.lower() == "v"):
     q51 = 11
-    q52 = input("draag je rood krulhaar en zo ja wat is de lengte in cm? (als u geen rood krulhaar heeft vul 'geen' in ")
+    q52 = input("draag je rood krulhaar en zo ja wat is de lengte in cm? (als u geen rood krulhaar heeft vul 'geen' in) ")
     if (q52.lower() == "geen"):
         failbool = True
         q52 = 19

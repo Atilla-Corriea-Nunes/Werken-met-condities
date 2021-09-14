@@ -23,9 +23,11 @@ while (plgender != "m" or plgender != "f"):
         plgender = input("Are you a guy or a girl? (M/F) ")
         if (plgender.lower() == "m"):
             plgender = ("sir")
+            coinholder = ("pouch")
             break
         elif (plgender.lower() == "f"):
             plgender = ("ma'am")
+            coinholder = ("purse")
             break
         else:
             print("oops, thats an incorrect input. accepted inputs are m or f")
@@ -70,10 +72,13 @@ while (c1 != "yes" or c1 != "no"):
     except:
         continue
 
+if (c1.lower() == "no"):
+    print("you continue on the path, ignoring whatever that shiny thing was and make your way to work. After all it would be ineffecient to spend your day doing anything else than working")
+
 if (c1.lower() == "yes"):
     print("You approach the shiny object. you reach out to grab the object. 'Well, its my lucky day' you think as you inspect the coin you just found.")
     print("+1 coin!")
-    print("You put the coin in your coinpurse and as you are about to walk back to the path to continue your journey yet another thing catches your eye.")
+    print("You put the coin in your coin"+ str(coinholder) +" and as you are about to walk back to the path to continue your journey yet another thing catches your eye.")
     print("out in the distance you see what appears to be a person in the woods. You stand still in shock and then make your decision")
 
     while (c2 != "yes" or c2 != "no"):
@@ -93,28 +98,23 @@ if (c1.lower() == "yes"):
         except:
              continue
 
+
+
 if (c2.lower() == "yes"):
-
-if (c2.lower() == "no"):
-
+    print("You decide to be a hero and save whoever is in distress in these woods")
 
 
-if (c1.lower() == "no"):
-    print("you continue on the path, ignoring whatever that shiny thing was and make your way to work. After all it would be ineffecient to spend your day doing anything else than working")
-
-        
-        
 if (c1.lower() == "no" or c2.lower() == "no"):
     print("You arrive at the local village. You know the inhabbitants quite well since you have lived near their village for quite a while. Usually you start going to work in the mines at this time, but if you felt like it you could do something else...")
 
-    while (c3 != "Work" or c3 != "Shop"):
+    while (c3.lower() != "work" or c3 != "shop"):
         try:
-            c2 = str(input("Where do you want to go next? (Work/Shop) "))
+            c3 = str(input("Where do you want to go next? (Work/Shop) "))
 
-            if (c2.lower() == "work"):
+            if (c3.lower() == "work"):
                  print("You head into the mines with your trusty pickaxe")
                  break
-            elif (c2.lower() == "shop"):
+            elif (c3.lower() == "shop"):
                 print("You enter the local shop, nothing in here truely interests you untill you notice something new... ")
                 print("A new pickaxe! it looks very good and you are kinda in need of a new pickaxe...")
                 break
@@ -128,12 +128,13 @@ if (c3.lower() == "shop"):
     print("'60 coins "+ str(plgender) +", this pickaxe was made by a legendary blacksmith and is extremely effective' he says")
     while (endshop != True):
         try:
-            c2 = str(print("You look in your coinpurse hoping to have enough to afford the pickaxe"))
+            c2 = str(print("You look in your coin"+ str(coinholder) + "hoping to have enough to afford the pickaxe"))
 
             if (money == "low"):
                  print("You count up your coins. Exactly 60!'This has to be my luckiest day ever!' you think to yourself in joy")
                  print("'So, you gonna buy it?' the shopkeeper asks.")
                  print("You look 1 last time at your trusty old pickaxe and wish it farewell. You buy the pickaxe from the shopkeeper")
+                 print("")
                  upgrade = True
                  endshop = True
                  money = "none"
@@ -141,10 +142,20 @@ if (c3.lower() == "shop"):
             elif (money == "none"):
                 print("You count up your coins. Unbelievable! exactly 59 coins... This must be a nightmare...")
                 print("you sadly and slowly exit the shop in defeat. the shopkeeper kinda gives you a weird look but he doesnt know the pain of being 1 coin short")
-                print("W")
+                print("")
                 endshop = True
                 break
-            else:
-                print("oops, thats an incorrect input. accepted inputs are yes or no")
         except:
              continue
+
+if (c3.lower() == "work" or upgrade == True):
+    print("Ah, the good ol mines. Not the best job but it sure does put food on the table")
+    print("You suddenly remember the rumor that crazy joe found a huge vein of gold in these mines and left our village as a rich man...")
+    print("No way thats real though, gold hasnt been found in these mines in decades...")
+    print("")
+    if (upgrade == True):
+        print("So, anyways. You grab out your newly bought pickaxe.'I sure hope that this thing is as good as the shopkeep said it would be' you think")
+        print("You start hacking away at the wall of the cave, hoping to find valuables")
+        print("As you are digging you notice that your s")
+
+
