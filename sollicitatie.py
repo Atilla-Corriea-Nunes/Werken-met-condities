@@ -1,7 +1,8 @@
 failbool = False
 expbool = "False"
 extbool = "False"
-
+    
+print("")
 print("Solicitatie Circusdirecteur voor Circus HotelDeBotel")
 print("u zal wat vragen krijgen om te constanteren of u deze positie kan nemen")
 print(" ")
