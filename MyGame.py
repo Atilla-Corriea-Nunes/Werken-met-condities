@@ -102,6 +102,84 @@ if (c1.lower() == "yes"):
 
 if (c2.lower() == "yes"):
     print("You decide to be a hero and save whoever is in distress in these woods")
+    print("as you walk closer to the person in the woods you realize its a young girl thats playing with some dolls. 'thats weird, i guess she must have wandered out too far' you think to yourself")
+    print("You're just about to tap her on her shoulder to tell her shes too far in the woods when you feel your vision suddenly fading and your body falling to the ground...")
+    print("")
+    print("You wake up at the same location that you passed out. Its night now and there's no sight of the girl.'What just happened?' you think to yourself")
+    print("You walk back to your little shack, still confused how that could've happened. You reach into your pockets to retrieve the keys to the front door but they're missing")
+    print("'What? I swear i didnt forget my keys today, where did they go?' You say as you think out loud to yourself")
+    print("Well, this leaves you with only 1 choice. You're going to have to head to the village to get a set of spare keys that you intrusted to your friend Sebastian")
+    print("Having no choice you walk the path to the village. 'I hope he's still awake, it does seem to be quite late' you think")
+    print("You arrive at the village. You had the strange feeling of being watched whilst traveling through the woods so you're glad to be in familliar territory.")
+    print("But one thing is off... Where are all the people? there isn't a soul in sight in the village. it might be night but at this time you should at the very least expect to see a random drunkard wandering...")
+    print("For a moment, your instincts kick in")
+
+    while (c4.lower() != "run" or c4 != "stay"):
+        try:
+            c4 = str(input("What do you do? (Run/Stay) "))
+
+            if (c4.lower() == "run"):
+                 print("Filled with terror due to the strange situation you find yourself in you make a run back to your shack")
+                 print("'its not worth staying here any longer, i'll just kick down the door when i get to my house'")
+                 print("You run and run to your house, but the path feels like it takes way longer to reach your house then usual...")
+                 print("But you keep running and running even though you get the feeling that your surroundings arent familliar")
+                 print("What happened? Where did you run to when overtaken by panic? I guess nobody will ever know")
+                 print("")
+                 print("YOU GOT THE INSANITY ENDING: Running maniac!")
+                 print("Thanks for playing the game! you got ending 1 out of ?! try to get all the endings")
+                 exit()
+            elif (c4.lower() == "stay"):
+                print("You surpress the urge to run.'no need to panic, its probably nothing unusual' you tell yourself")
+                print("You walk to Sebastian's house and knock on the door.'Hey sebastian, you still up?' you call out.")
+                print("But before you hear a reply the door suddenly opens by itself...")
+                print("'Woah, its unusual for Sebastian to leave his front door unlocked, especially during the night' you think")
+                print("You make your way into the house to make sure your friend is alright")
+                print("But there isnt a trace of him... 'Well, this is quite awfull' you think as you look around the almost empty house.")
+                print("You spot the spare keys to your house. Getting home isn't more important then your friend but its nice to grab the keys so you dont forget later")
+                print("As soon as your hand touches the keys you hear the sound of a voice. instinctively you turn around to see who was talking but nobody is around")
+                print("'You're in danger' The voice says.'who are you?' you reply. the voice does remind you of Sebastian's voice but the location its coming from is completely empty... something is up... ")
+                print("The voice calls out once more: 'A wave of madness will soon hit your world, but you can still be saved. take the path that goes to Riverdale and you can be saved'")
+                print("in confusion you stand there for a moment. 'Riverdale is the big city thats quite a long way from the village' you remember")
+                print("'Quickly! Not much time remains!' The voice says whilst fading away.")
+                print("Its time for you to choose...")
+                print("")
+
+                break
+            else:
+                print("oops, thats an incorrect input. accepted inputs are Run or Stay")
+        except:
+             continue
+
+
+if (c4.lower() == "Stay"):
+    while (c5.lower() != "listen" or c5 != "ignore"):
+        try:
+            c5 = str(input("Do you listen to the advice or do you ignore it? (Listen/Ignore) "))
+
+            if (c5.lower() == "listen"):
+                print("")
+                break
+            elif (c5.lower() == "ignore"):
+                print("There's no reason for you to trust this voice, you must find an actual person to talk to and quickly. This situation is extremely unsettling")
+                print("You quickly grab your keys and stuff them in your pockets. You run out of the house in search of a living soul that could tell you what is happening ")
+                print("Running around the village in distress you cant see anyone. All of the lights in the houses are off.")
+                print("Finally you make it to the village church. The inside is lit! Great, there must be people in there")
+                print("You open the doors to the church. As you look inside you hear loud chanting in a language you dont understand. The church is filled completely, every seat it taken by someone and theres a bunch of villagers chanting something at the very end")
+                print("All of the villagers are wearing black robes with hoods and ignore your presense as you walk into the church 'What is happening? this must be the entire population of the village in here at the same time!' you think")
+                print("You quickly look at the almost unrecognisable group of people that is chanting something hoping to recognize Sebastian")
+                print("Thankfully you spot what looks to be Sebastian. You hurriedly get to him and tap him on his shoulder 'Sebastian, whats happening? Why is the entire village here? I need your help'")
+                print("'Ah, "+ str(plname) +",you finally came. We were expecting you. Come join us now!' He says. The voice does not sound like Sebastian's")
+                print("The hooded figure turns around to meet your eyes. When you look into his eyes you make the terrifying discovery that his eyes are completely blood red")
+                print("You feel your body hitting the ground from pure shock as you lose conciousness...")
+                print("")
+                print("YOU GOT THE INSANITY ENDING: Doomed by the cult!")
+                print("Thanks for playing the game! you got ending 2 out of ?! try to get all the endings")
+                break
+            else:
+                print("oops, thats an incorrect input. accepted inputs are Run or Stay")
+        except:
+             continue
+
 
 
 if (c1.lower() == "no" or c2.lower() == "no"):
