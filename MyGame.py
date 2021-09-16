@@ -389,7 +389,6 @@ if (c3.lower() == "work" or endshop == True and upgrade == False):
                 print("You realize you might not be back for a while so you go to the house of your good friend Sebastian")
                 print("He understands your decision and says 'Farewell "+ str(plname) +". My sister and mother live in Riverdale, thank you for helping to protect them")
                 print("He hands you a big pouch of coins and says 'here's 100 coins for the journey, stay safe out there'")
-                money + 100
                 print("You thank him for his support and get your horse named Roach from your stable to make the long journey to Riverdale")
                 print("From now on your life will be a whole lot different...")
                 print("")
